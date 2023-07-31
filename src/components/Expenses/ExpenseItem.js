@@ -6,6 +6,7 @@ import './ExpenseItem.css';
 
 function ExpenseItem (props){
   const [title, setTitle] = useState(props.title); // [var, funcion a usar] = estado (leer el dato enviado en title) esto es un decontructivo
+  console.log(title);
   
   const clickHandler = ()=> {
     setTitle('Updated!!');
